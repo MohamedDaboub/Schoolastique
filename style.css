@@ -1,0 +1,170 @@
+/**
+Theme Name: Schoolastique
+Author: Mohamed Daboub
+Author URI: http:daboub.fr
+Description: Schoolastique
+Version: 1.0.0
+Text Domain: schoolastique
+Template: astra
+*/
+/* Titre de la page  */
+a:hover{
+	color : #a6000d;
+}
+.Titre_de_la_page{
+	position: relative;
+    font-family: sans-serif;
+    text-align: center;
+}
+.Titre_de_la_page::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 67%;
+    transform: translateX(-50%);
+    width: 7%;
+    height: 10px; 
+    background-color: #A6000D;
+}
+
+@media (max-width: 768px) {
+    .Titre_de_la_page::after {
+        width: 10%;
+        height: 8px; 
+        left: 75%;  
+    }
+}
+@media (max-width: 480px) {
+    .Titre_de_la_page::after {
+        width: 20%;
+        height: 5px;
+    }
+}
+/* Formulaire de contact */
+div.wpforms-container-full input{
+	 border: #A6000D solid 1px;
+}
+wpforms-submit-container{
+	display:block;
+}
+div.wpforms-submit-container, button.wpforms-submit {
+	background-color : #A6000D!important;
+}
+
+/*  Page Acticle  */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacement entre les cartes */
+}
+@media screen and (max-width: 768px) {
+    /* Tablettes */
+    
+    .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 520px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+}
+}
+/* Styles pour la carte d'article */
+.Titre_page_article{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.texte_important{
+    font-size: 20px;
+    font-weight: bold;
+	padding : 25px 0px 0px 0px;
+}
+.texte{
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .Titre_page_article{
+        font-size: 30px;
+    }
+    .texte_important{
+        font-size: 15px;
+    }
+    .texte{
+        font-size: 15px;
+    }
+    .titre_article {
+        font-size: 15px;
+    }
+    .article-card p {
+        font-size: 15px;
+    }
+    .button {
+        font-size: 15px;
+    }
+}
+.article-card {
+    border: 1px solid #ddd;
+    padding: 0px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.card_contenu{
+	padding: 16px;
+	
+}
+.titre_article {
+	padding: 10px 0px;
+    font-weight: bold;
+}
+.article-card p {
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    margin: 15px 5px;
+    background-color: #a6000d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+	 float: right;
+}
+/* Styles pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-numbers {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+.page-numbers:hover{
+	color:#a6000d;
+}
+.page-numbers.current {
+    background-color: #a6000d;
+    color: #fff;
+    border: 1px solid #a6000d;
+}
+
+/* Newsletter */
+.tnp-field-button{
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	margin-top: 16px
+}
+.tnp-subscription input.tnp-submit{
+	background-color: #a6000d;
+	border-radius: 2px;
+	padding: 16px;
+}
